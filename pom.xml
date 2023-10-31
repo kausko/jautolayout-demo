@@ -28,6 +28,10 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
     <dependencyManagement>
@@ -87,6 +91,16 @@
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-testbench-junit5</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.kausko</groupId>
+            <artifactId>Jautolayout</artifactId>
+            <version>ff36d70d0a</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.kausko</groupId>
+            <artifactId>kiwi-java</artifactId>
+            <version>1025759ebb</version>
         </dependency>
     </dependencies>
 
