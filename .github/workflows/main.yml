@@ -1,0 +1,9 @@
+on:
+  schedule:
+  - cron: "*/15 * * * *"
+jobs:
+  Ping-Website:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ping jautolayout.onrender.com -c 1
+    
