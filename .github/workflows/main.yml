@@ -5,5 +5,5 @@ jobs:
   Ping-Website:
     runs-on: ubuntu-latest
     steps:
-      - run: ping jautolayout.onrender.com -c 1
+      - run: ping jautolayout.onrender.com -c 10
     
