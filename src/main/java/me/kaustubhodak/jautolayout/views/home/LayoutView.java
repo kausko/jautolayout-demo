@@ -54,7 +54,6 @@ public class LayoutView extends Div {
                         LumoUtility.BorderColor.CONTRAST_50,
                         LumoUtility.BorderRadius.SMALL
                 );
-                System.out.print(k + " ");
                 for (var key : keys) {
                     var value = v.getOrDefault(key, new Variable(0.0)).getValue();
                     div.getStyle().set(key, ((int) value) + "px");

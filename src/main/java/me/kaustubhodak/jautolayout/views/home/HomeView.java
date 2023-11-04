@@ -22,7 +22,7 @@ import com.vaadin.flow.theme.lumo.LumoUtility;
 
 import java.util.Arrays;
 
-@PageTitle("Home")
+@PageTitle("JAutoLayout")
 @Route(value = "")
 @Uses(Icon.class)
 public class HomeView extends Composite<AppLayout> {

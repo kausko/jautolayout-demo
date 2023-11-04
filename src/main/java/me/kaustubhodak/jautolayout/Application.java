@@ -1,6 +1,7 @@
 package me.kaustubhodak.jautolayout;
 
 import com.vaadin.flow.component.page.AppShellConfigurator;
+import com.vaadin.flow.server.AppShellSettings;
 import com.vaadin.flow.theme.Theme;
 import javax.sql.DataSource;
 
@@ -25,6 +26,12 @@ public class Application implements AppShellConfigurator {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
+    }
+
+    @Override
+    public void configurePage(AppShellSettings settings) {
+        AppShellConfigurator.super.configurePage(settings);
+        settings.addFavIcon("icon", "icons/favicon.png", "192x192");
     }
 
     @Bean
